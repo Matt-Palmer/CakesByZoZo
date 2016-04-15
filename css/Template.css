@@ -1,0 +1,135 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    padding-top: 100px;
+}
+
+header{
+    background-color: rgba(65, 167, 216, 1);
+    color: white;
+    height: 100px;
+    text-align: center;
+}
+
+h1{
+    line-height: 100px;
+}
+
+.headerNav{
+    background-color: rgb(233,233,233);
+    height: 40px;
+    position: relative;
+    z-index: 150;
+    margin-bottom: -40px;
+ }
+ 
+.headerNav > ul > li{
+    text-align: center;
+}
+
+.headerNav > ul > li > a{
+    display: block;
+    width: 200px;
+    height: 40px;
+    text-decoration: none;
+    color: rgb(65, 167, 216);
+    line-height: 40px;
+    margin: 0 auto;
+}
+
+.header-nav-scrolled, 
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.subMenu{
+    display: none;
+    background-color: rgb(233,233,233);
+    width: 200px;
+    margin: 0 auto;
+}
+
+.subMenu > li{
+    list-style-type: none;
+    text-align: center;
+}
+
+.subMenu > li > a{
+    display: block;
+    color: rgb(65, 167, 216);
+    text-decoration: none;
+    height: 40px;
+    width: 200px;
+    line-height: 40px;
+}
+
+.subMenu > li > a:hover{
+    background-color: rgb(65, 167, 216);
+    color: white;
+}
+
+footer{
+    background-color: rgb(233,233,233);
+    height: 90px;
+    width: 100%;
+    text-align: center;
+    line-height: 90px;
+}
+
+
+.main{
+    position: relative;
+    background-color: white;
+    height: 800px;
+    padding: 40px 10px 0;
+}
+
+
+/*
+MEDIA QUERIES - on devices that have a greater width than 
+769px then the classes defined inside will be applied.
+*/
+@media (min-width: 769px){
+    
+    .mainHeader{
+        text-align: left;
+    }
+    
+    .navTabs > ul > li > a{
+       padding-left: 10px;
+    }
+    
+    .subMenu > li{
+        text-align: right;
+    }
+    
+    .subMenu > li > a{
+        padding-right: 10px;
+    }
+
+    .container{
+        max-width: 800px;
+        margin: 0 auto ;
+        padding: 0;
+        height: auto;
+    }
+    
+    .body-container{
+        margin-top: 10px;
+        padding: 10px;
+    }
+    
+    .wrapper{
+        min-height: calc(100vh - 90px);
+        padding: 0;
+        margin: 0;
+    }
+    
+    
+}

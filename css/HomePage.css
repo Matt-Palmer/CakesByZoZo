@@ -1,0 +1,19 @@
+.text-content{
+    text-align: justify;
+}
+
+#cakeImage{
+    float: left;
+    width: 200px;
+    height: 250px;
+}
+
+
+@media (min-width: 769px){
+    
+    #cakeImage{
+        width: 300px;
+        height: 350px;
+    }
+    
+}
