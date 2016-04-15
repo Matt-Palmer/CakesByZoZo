@@ -4,6 +4,7 @@
     background: white;
     border: 2px solid lightgray;
     border-radius: 8px;
+    margin-top: 20px;
     position: relative;
 }
 
@@ -31,8 +32,6 @@ h3{
 .text-area{
     height: 150px;
     padding: 5px;
+    box-shadow: inset 1px 1px 2px gray;
 }
 
-#doo{
-    height: 30px;
-}
