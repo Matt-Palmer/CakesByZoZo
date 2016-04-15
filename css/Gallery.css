@@ -3,8 +3,10 @@
     width: 144px;
     height: 144px;
     display: inline-block;
+    background-color: rgb(229,229,229);
+    padding: 5px;
     margin: 0 5px 15px 5px;
-    box-shadow: 0 10px 15px black;
+    box-shadow: 0 8px 15px black;
 }
 
 img {
