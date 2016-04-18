@@ -15,10 +15,16 @@ img {
     display: block;
 }
 
+.imgContainer:hover{
+    
+    box-shadow: none;
+}
+
 .gallery-container{
     width: 100%;
     margin: 0 auto;
-    padding: 21px;
+    text-align: center;
+    padding: 20px 0;
 }
 
 .main{
