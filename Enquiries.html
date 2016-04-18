@@ -37,16 +37,34 @@
             <div class="form-container">
                 <h3>Enquiries Form</h3>
 
-                <p class="form-headings">Name</p>
+                <p class="form-headings">Name:</p>
                 <input type="text" id="Name" class="input-fields" placeholder="Enter your full name">
 
-                <p class="form-headings">Email</p>
+                <p class="form-headings">Email:</p>
                 <input type="email" id="Email" class="input-fields" placeholder="Enter your email">
 
-                <p class="form-headings">Date of Order</p>
+                <p class="form-headings">Requested Date:</p>
                 <input type="date" id="doo" class="input-fields">
                 
-                <p class="form-headings">Message</p>
+                <p class="form-headings">Cake Size:</p>
+                <select class="selection-field">
+                    <option value="None">-</option>
+                    <option value="6">6</option>
+                    <option value="8">8</option>
+                    <option value="10">10</option>
+                    <option value="12">12</option>
+                </select>
+                
+                <p class="form-headings">Cake Flavour:</p>
+                <select class="selection-field">
+                    <option value="None">-</option>
+                    <option value="Vanilla">Vanilla</option>
+                    <option value="Chocolate">Chocolate</option>
+                    <option value="Fruit">Fruit</option>
+                    <option value="Strawberry">Strawberry</option>
+                </select>
+                
+                <p class="form-headings">Message:</p>
                 <textarea id="user-message" class="text-area input-fields" placeholder="Enter your message"></textarea>
                 
                 <input class="btn" type="button" value="Submit">

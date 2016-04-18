@@ -21,24 +21,30 @@ h3{
     float: left;
 }
 
-
-
-.input-fields{
+.input-fields,
+.selection-field{
+    color: gray;
     margin-bottom: 10px;
     border-radius: 4px;
-    padding: 15px 5px 15px 5px;
-    width: 90%;
-    height: 20px;
-    font-size: 20px;
-    color: gray;
-    font-family: "Times New Roman", Times, serif;
     border: 1px solid lightgray;
-    
-    -webkit-appearance: none;
+    width: 90%;
+    font-size: 20px;
+    -webkit-appearance: none; /*allows the styling to remain on iPhones*/
+}
+
+.input-fields{
+    padding: 15px 5px 15px 5px;
+    height: 20px;
+    font-family: "Times New Roman", Times, serif;
 }
 
 .input-fields:focus{
     box-shadow: 0 0 15px rgba(65, 167, 216, 1);
+}
+
+.selection-field{
+    background-color: white;
+    padding: 5px;
 }
 
 .text-area{
