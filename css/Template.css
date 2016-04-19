@@ -86,8 +86,8 @@ footer{
 .main{
     position: relative;
     background-color: white;
-    height: 800px;
-    padding: 40px 10px 0;
+    height: auto;
+    padding: 40px 10px 10px;
 }
 
 
