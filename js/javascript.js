@@ -39,3 +39,12 @@ $(window).scroll(function(){
     }
 })
 
+$('#toggleMenu').click(function(){
+    $('.submenu-container ul').toggle('slide', {direction: 'left'}, 500);
+    console.log('slide');
+})
+
+$('#Back').click(function(){
+    $('.submenu-container ul').toggle('slide', {direction: 'left'}, 500);
+})
+

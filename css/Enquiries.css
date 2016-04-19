@@ -43,15 +43,19 @@ h3{
     font-family: "Times New Roman", Times, serif;
 }
 
-.input-fields:focus{
-    box-shadow: 0 0 15px rgba(65, 167, 216, 1);
-    -webkit-appearance: none;
-}
-
 .selection-field{
     background-color: white;
     padding: 5px;
 }
+
+.selection-field:focus,
+.input-fields:focus{
+    outline: 0;
+    box-shadow: 0 0 5px rgba(65, 167, 216, 1);
+    -webkit-appearance: none;
+}
+
+
 
 .text-area{
     height: 150px;
@@ -67,5 +71,11 @@ h3{
     width: 90%;
     padding: 10px 10px;
     -webkit-appearance: none;
+}
+
+.btn:hover,
+.btn:active{
+    background-color: rgba(6, 123, 180, 1);
+    outline: 0;
 }
 
