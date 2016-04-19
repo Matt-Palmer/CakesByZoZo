@@ -28,6 +28,12 @@ document.getElementById('menu').addEventListener('click', function(e){
     menu.style.color = (hid) ? 'white' : 'rgb(65, 167, 216)';
 })
 
+var fixed = document.getElementById('fixed');
+
+fixed.addEventListener('touchmove', function(e){
+    e.preventDefault();
+}, false)
+
 var hn = $('.headerNav');
 
 $(window).scroll(function(){
@@ -39,12 +45,16 @@ $(window).scroll(function(){
     }
 })
 
-$('#toggleMenu').click(function(){
+$('#toggleMenu').click(function(event){
+    event.preventDefault();
     $('.submenu-container ul').toggle('slide', {direction: 'left'}, 500);
     console.log('slide');
 })
 
-$('#Back').click(function(){
+$('#Back').click(function(event){
+    event.preventDefault();
     $('.submenu-container ul').toggle('slide', {direction: 'left'}, 500);
 })
+
+
 

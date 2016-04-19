@@ -34,6 +34,7 @@ p{
 
 #Back{
 	width: 100px;
+	text-align: center;
 }
 
 .submenu-container ul{
@@ -42,18 +43,19 @@ p{
 
 
 .submenu-container ul{
-	height: 667px;
+	height: 100%;
 	width: 80%;
-	position: absolute;
+	position: fixed;
 	background-color: rgb(233,233,233);
-	top: -100px;
+	top: 0px;
 	left: 0px;
+	z-index: 160;
 }
 
 .submenu-container ul li{
 	clear: both;
 	list-style-type: none;
-    text-align: center;
+    text-align: right;
 }
 
 .submenu-container ul li a{
@@ -61,6 +63,11 @@ p{
 	padding: 20px;
 	text-decoration: none;
 	color:  rgb(65, 167, 216);
+	background-color: rgba(188, 187, 187, 0.2);
+}
+
+.submenu-container ul li:last-child{
+	
 }
 
 .submenu-container ul li a:hover{
