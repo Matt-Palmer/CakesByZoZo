@@ -2,59 +2,67 @@
 <html>
     <head>
         
-        <title>HomePage</title>
+        <title>Template</title>
         
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="utf-8">
         
-        <link rel="stylesheet" href="css/HomePage.css">
+        <script src="js/jquery-2.2.0.min.js"></script>
+
+        <script src='js/jquery-ui.min.js'></script>
+
+
+        
+        <link rel="stylesheet" href="css/Template.css">
+        <link rel="stylesheet" href="css/About.css">
     
     </head>
     
     <body>
         
-        <div class="wrapper">
-            <header class="mainHeader">
-                <div class="container">
-                    
-                    
-                    <h1>Cakes By ZoZo</h1>
+        <header>
+            <h1>Cakes By ZoZo</h1>
+        </header>
 
+        <nav class="headerNav">
+            <a href="#" id="toggleMenu" class="toggle-menu">Menu</a>     
+            <ul class="main-menu">
+                <li> 
+                    <a href="#" id="menu">Menu</a> 
+                    <ul id="submenu" class="subMenu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Gallery.html">Gallery</a></li>
+                        <li><a href="Enquiries.html">Enquiries</a></li>
+                        <li><a href="About.html">About</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
 
-                </div>
-                
-                
-
-                <nav class="headerNav">
-                    <div class="container">
-                        <div class="navTabs">
-                            <ul>
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">Gallery</a></li>
-                                <li><a href="#">Contact</a></li>
-                                <li><a href="#">About</a></li>
-                            </ul>
-                            
-                        </div>
-                        
-                    
-                    </div>
-                </nav>
-            </header>
-
-            <div class="container">
-                <p>Main Body</p>
-            </div>
-            
-            
+        <div id='fixed' class="submenu-container">
+            <ul>
+                <li><a href='#' id='Back'>Back</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Gallery.html">Gallery</a></li>
+                <li><a href="Enquiries.html">Enquiries</a></li>
+                <li><a href="About.html">About</a></li>
+            </ul>
         </div>
+            
+           
+
+        <div class="main">
+               
+        </div>
+            
+            
         
-        <footer class="mainFooter">
+        <footer>
             <p style="padding: 0; margin:0;">Copyright Matt Palmer</p>
         </footer>
         
         
-        <script src="js/javascript.js"></script>>
+        <script src="js/javascript.js"></script>
     
     </body>
 </html>

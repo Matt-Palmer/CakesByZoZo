@@ -4,34 +4,52 @@
         
         <title>Enquiries</title>
         
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="utf-8">
         
         <script src="js/jquery-2.2.0.min.js"></script>
+
+        <script src='js/jquery-ui.min.js'></script>
+
+
         
         <link rel="stylesheet" href="css/Template.css">
         <link rel="stylesheet" href="css/Enquiries.css">
     
     </head>
-
+    
     <body>
-         
-        <header>  
+        
+        <header>
             <h1>Cakes By ZoZo</h1>
         </header>
-            
+
         <nav class="headerNav">
-            <ul>
-                <li><a href="#" id="menu">Menu</a>                                         
+            <a href="#" id="toggleMenu" class="toggle-menu">Menu</a>     
+            <ul class="main-menu">
+                <li> 
+                    <a href="#" id="menu">Menu</a> 
                     <ul id="submenu" class="subMenu">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="Gallery.html">Gallery</a></li>
-                        <li><a href="Enquiries.html">Enquiries</a></li>   
+                        <li><a href="Enquiries.html">Enquiries</a></li>
                         <li><a href="About.html">About</a></li>
                     </ul>
                 </li>
-            </ul>  
+            </ul>
         </nav>
+
+        <div id='fixed' class="submenu-container">
+            <ul>
+                <li><a href='#' id='Back'>Back</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Gallery.html">Gallery</a></li>
+                <li><a href="Enquiries.html">Enquiries</a></li>
+                <li><a href="About.html">About</a></li>
+            </ul>
+        </div>
+            
+           
 
         <div class="main">
             <div class="form-container">
@@ -71,21 +89,15 @@
           
             </div>
         </div>
-
+            
+            
+        
         <footer>
-            <p>Copyright Matt Palmer</p>
+            <p style="padding: 0; margin:0;">Copyright Matt Palmer</p>
         </footer>
+        
         
         <script src="js/javascript.js"></script>
     
     </body>
 </html>
-
-
-
-
-
-
-
-
-
