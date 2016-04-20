@@ -102,6 +102,11 @@ header{
     color: white;
 }
 
+.submenu-container ul li a.selected{
+    background-color: rgba(65, 167, 216, 1);  
+    color: white;
+}
+
 .main-menu{
     display: none;
 }
