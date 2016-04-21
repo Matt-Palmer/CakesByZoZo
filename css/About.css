@@ -16,60 +16,7 @@ p{
 	margin-bottom: 10px;
 }
 
-/*Test submenu styles*/
-.toggle-menu{
-	display: block;
-	text-decoration: none;
-	width: 100px;
-	height: 40px;
-	padding-left: 30px;
-	line-height: 40px;
-	color: rgb(65, 167, 216);
-}
 
-.toggle-menu:hover{
-	background-color: rgb(65, 167, 216);
-    color: white;
-}
-
-#Back{
-	width: 100px;
-	text-align: center;
-}
-
-.submenu-container ul{
-	display: none;
-}
-
-
-.submenu-container ul{
-	height: 100%;
-	width: 80%;
-	position: fixed;
-	background-color: rgb(233,233,233);
-	top: 0px;
-	left: 0px;
-	z-index: 160;
-}
-
-.submenu-container ul li{
-	clear: both;
-	list-style-type: none;
-    text-align: right;
-}
-
-.submenu-container ul li a{
-	display: block;
-	padding: 20px;
-	text-decoration: none;
-	color:  rgb(65, 167, 216);
-	background-color: rgba(188, 187, 187, 0.2);
-}
-
-.submenu-container ul li a:hover{
-	background-color: rgb(65, 167, 216);
-	color: white;
-}
 
 .main-menu{
 	display: none;

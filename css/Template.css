@@ -63,7 +63,8 @@ header{
     color: white;
 }
 
-#Back{
+#Back,
+#Back-submenu{
     width: 100px;
     text-align: center;
 }
@@ -79,7 +80,7 @@ header{
     position: fixed;
     background-color: rgb(233,233,233);
     top: 0px;
-    left: 0px;
+    right: 0px;
     z-index: 160;
 }
 
@@ -97,12 +98,51 @@ header{
     background-color: rgba(188, 187, 187, 0.2);
 }
 
-.submenu-container ul li a:hover{
+.submenu-container ul li a:active{
     background-color: rgb(65, 167, 216);
     color: white;
 }
 
 .submenu-container ul li a.selected{
+    background-color: rgba(65, 167, 216, 1);  
+    color: white;
+}
+
+.gallery-submenu-container ul{
+    display: none;
+}
+
+
+.gallery-submenu-container ul{
+    height: 100%;
+    width: 80%;
+    position: fixed;
+    background-color: rgb(233,233,233);
+    top: 0px;
+    right: 0px;
+    z-index: 160;
+}
+
+.gallery-submenu-container ul li{
+    clear: both;
+    list-style-type: none;
+    text-align: right;
+}
+
+.gallery-submenu-container ul li a{
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    color:  rgb(65, 167, 216);
+    background-color: rgba(188, 187, 187, 0.2);
+}
+
+.gallery-submenu-container ul li a:active{
+    background-color: rgb(65, 167, 216);
+    color: white;
+}
+
+.gallery-submenu-container ul li a.selected{
     background-color: rgba(65, 167, 216, 1);  
     color: white;
 }

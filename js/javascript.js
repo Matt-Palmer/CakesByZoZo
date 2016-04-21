@@ -28,11 +28,25 @@ document.getElementById('menu').addEventListener('click', function(e){
     menu.style.color = (hid) ? 'white' : 'rgb(65, 167, 216)';
 })
 
-var fixed = document.getElementById('fixed');
+var fixedMenu = document.getElementById('fixed-menu');
 
-fixed.addEventListener('touchmove', function(e){
+fixedMenu.addEventListener('touchmove', function(e){
     e.preventDefault();
 }, false);
+
+var fixedGalleryMenu = document.getElementById('fixed-gallery-menu');
+
+fixedGalleryMenu.addEventListener('touchmove', function(e){
+    e.preventDefault();
+}, false);
+
+
+
+
+
+
+
+
 
 $(document).ready(function($){
 
@@ -49,17 +63,31 @@ $(document).ready(function($){
 
     $('#toggleMenu').click(function(event){
         event.preventDefault();
-        $('.submenu-container ul').toggle('slide', {direction: 'left'}, 500);
+        $('.submenu-container ul').toggle('slide', {direction: 'right'}, 500);
         console.log('slide');
     })
 
     $('#Back').click(function(event){
         event.preventDefault();
-        $('.submenu-container ul').toggle('slide', {direction: 'left'}, 500);
+        $('.submenu-container ul').toggle('slide', {direction: 'right'}, 500);
+    })
+    
+     $('#gallery').click(function(event){
+        event.preventDefault();
+        $('.submenu-container ul').toggle('slide', {direction: 'right'}, 500);
+         
+        $('.gallery-submenu-container ul').toggle('slide', {direction: 'right'}, 500);
+        console.log('slide');
+    })
+
+    $('#Back-submenu').click(function(event){
+        event.preventDefault();
+        $('.gallery-submenu-container ul').toggle('slide', {direction: 'right'}, 500);
+        
+        $('.submenu-container ul').toggle('slide', {direction: 'right'}, 500);
     })
 
     
-
     $('.submenu-container a').each(function(index) {
         if(this.href.trim() == window.location){
             $(this).addClass("selected");
@@ -68,6 +96,22 @@ $(document).ready(function($){
         }
             
     });
+
+    $('.gallery-submenu-container a').each(function(index) {
+        if(this.href.trim() == window.location){
+            $(this).addClass("selected");
+            
+            if(this.id == 'gallery-choices'){
+                $('#gallery').addClass('selected');
+            }
+
+            console.log("class added")
+        }
+            
+    });
+    
+     
+    
 });
 
 

@@ -1,7 +1,7 @@
 /**iPhone**/
 .imgContainer{
-    width: 144px;
-    height: 144px;
+    width: 165px;
+    height: 165px;
     display: inline-block;
     background-color: rgb(229,229,229);
     padding: 5px;
@@ -28,7 +28,8 @@ img {
 }
 
 .main{
-    padding-left: 10px;
+    text-align: center;
+    padding: 55px 10px 10px;
 }
 /**iPhone**/
 
