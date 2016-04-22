@@ -1,3 +1,4 @@
+
 /**iPhone**/
 .imgContainer{
     width: 165px;
@@ -15,6 +16,8 @@ img {
     display: block;
 }
 
+
+
 .imgContainer:hover{
     
     box-shadow: none;
@@ -31,6 +34,16 @@ img {
     text-align: center;
     padding: 55px 10px 10px;
 }
+
+/**EDIT THIS (a div needs to be added with this class that will be displayed when an image is selected)**/
+.lightbox-background{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,0,0,1);
+    z-index: 200;
+}
+/**EDIT THIS (a div needs to be added with this class that will be displayed when an image is selected)**/
+
 /**iPhone**/
 
 /**iPhone 6 Plus**/

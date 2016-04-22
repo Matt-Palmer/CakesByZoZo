@@ -61,34 +61,34 @@ $(document).ready(function($){
         }
     })
 
-    $('#toggleMenu').click(function(event){
+    $('#toggleMenu').click(function toggleMenu(event){
         event.preventDefault();
-        $('.submenu-container ul').toggle('slide', {direction: 'right'}, 500);
+        $('.submenu-container ul').toggle('slide', {direction: 'right'}, 10);
         console.log('slide');
     })
 
-    $('#Back').click(function(event){
+    $('#Back').click(function closeMenu(event){
         event.preventDefault();
-        $('.submenu-container ul').toggle('slide', {direction: 'right'}, 500);
+        $('.submenu-container ul').toggle('slide', {direction: 'right'}, 10);
     })
     
-     $('#gallery').click(function(event){
+     $('#gallery').click(function openGalleryMenu(event){
         event.preventDefault();
-        $('.submenu-container ul').toggle('slide', {direction: 'right'}, 500);
+        $('.submenu-container ul').toggle('slide', {direction: 'right'}, 10);
          
-        $('.gallery-submenu-container ul').toggle('slide', {direction: 'right'}, 500);
+        $('.gallery-submenu-container ul').toggle('slide', {direction: 'right'}, 10);
         console.log('slide');
     })
 
-    $('#Back-submenu').click(function(event){
+    $('#Back-submenu').click(function closeGalleryMenu(event){
         event.preventDefault();
-        $('.gallery-submenu-container ul').toggle('slide', {direction: 'right'}, 500);
+        $('.gallery-submenu-container ul').toggle('slide', {direction: 'right'}, 10);
         
-        $('.submenu-container ul').toggle('slide', {direction: 'right'}, 500);
+        $('.submenu-container ul').toggle('slide', {direction: 'right'}, 10);
     })
 
     
-    $('.submenu-container a').each(function(index) {
+    $('.submenu-container a').each(function highlightSelectedListItem(index) {
         if(this.href.trim() == window.location){
             $(this).addClass("selected");
 
@@ -97,7 +97,7 @@ $(document).ready(function($){
             
     });
 
-    $('.gallery-submenu-container a').each(function(index) {
+    $('.gallery-submenu-container a').each(function highlightSelectedGalleryListItem(index) {
         if(this.href.trim() == window.location){
             $(this).addClass("selected");
             
@@ -108,6 +108,13 @@ $(document).ready(function($){
             console.log("class added")
         }
             
+    });
+
+
+    $('img').click(function openLightbox(event){
+        $('body').addClass('lightbox-background')
+
+        console.log('open lightbox');
     });
     
      

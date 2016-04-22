@@ -19,12 +19,23 @@ h1{
     line-height: 100px;
 }
 
+h1, a{
+    /*font-family: 'Pacifico', cursive;*/
+    /*font-family: 'Lobster', cursive;*/
+    font-family: 'Pacifico', cursive;
+    font-weight: normal;
+}
+
 .headerNav{
     background-color: rgb(233,233,233);
     height: 40px;
     position: relative;
     z-index: 150;
     margin-bottom: -40px;
+ }
+
+ div, p{
+    font-family: 'Lora', serif;
  }
  
 .headerNav > ul > li{
@@ -50,10 +61,11 @@ header{
 
 .toggle-menu{
     display: block;
+    float: right;
     text-decoration: none;
     width: 100px;
     height: 40px;
-    padding-left: 30px;
+    text-align: center;
     line-height: 40px;
     color: rgb(65, 167, 216);
 }
@@ -69,11 +81,12 @@ header{
     text-align: center;
 }
 
+.gallery-submenu-container ul,
 .submenu-container ul{
     display: none;
 }
 
-
+.gallery-submenu-container ul,
 .submenu-container ul{
     height: 100%;
     width: 80%;
@@ -84,12 +97,14 @@ header{
     z-index: 160;
 }
 
+.gallery-submenu-container ul li,
 .submenu-container ul li{
     clear: both;
     list-style-type: none;
     text-align: right;
 }
 
+.gallery-submenu-container ul li a,
 .submenu-container ul li a{
     display: block;
     padding: 20px;
@@ -98,51 +113,17 @@ header{
     background-color: rgba(188, 187, 187, 0.2);
 }
 
-.submenu-container ul li a:active{
+.gallery-submenu-container ul li a:active,
+.gallery-submenu-container ul li a:focus,
+.submenu-container ul li a:active,
+.submenu-container ul li a:focus{
     background-color: rgb(65, 167, 216);
     color: white;
 }
 
+
+.gallery-submenu-container ul li a.selected,
 .submenu-container ul li a.selected{
-    background-color: rgba(65, 167, 216, 1);  
-    color: white;
-}
-
-.gallery-submenu-container ul{
-    display: none;
-}
-
-
-.gallery-submenu-container ul{
-    height: 100%;
-    width: 80%;
-    position: fixed;
-    background-color: rgb(233,233,233);
-    top: 0px;
-    right: 0px;
-    z-index: 160;
-}
-
-.gallery-submenu-container ul li{
-    clear: both;
-    list-style-type: none;
-    text-align: right;
-}
-
-.gallery-submenu-container ul li a{
-    display: block;
-    padding: 20px;
-    text-decoration: none;
-    color:  rgb(65, 167, 216);
-    background-color: rgba(188, 187, 187, 0.2);
-}
-
-.gallery-submenu-container ul li a:active{
-    background-color: rgb(65, 167, 216);
-    color: white;
-}
-
-.gallery-submenu-container ul li a.selected{
     background-color: rgba(65, 167, 216, 1);  
     color: white;
 }
