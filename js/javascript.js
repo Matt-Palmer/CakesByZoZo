@@ -41,6 +41,18 @@ fixedGalleryMenu.addEventListener('touchmove', function(e){
 }, false);
 
 
+function disableLightboxScroll(){
+    var lightbox = document.getElementById('lightbox');
+
+    lightbox.addEventListener('touchmove', function(e){
+        e.preventDefault();
+        
+        console.log('scroll disabled');
+    }, false);
+    
+}
+
+
 
 
 
@@ -109,14 +121,50 @@ $(document).ready(function($){
         }
             
     });
+    
+    var imgCount = $('.imgContainer img');
+    
+    var galleryCount = imgCount.length;
 
+    imgCount.each(function openLightbox(index, value){
+        $(this).click(function openLightbox(event){
+        
+            var imager_src = $(this).attr('src');
 
-    $('img').click(function openLightbox(event){
-        $('body').addClass('lightbox-background')
+            if ($('#lightbox').length > 0){
 
-        console.log('open lightbox');
+                
+                $('#content').html('<img src="' + imager_src + '" />');
+                
+                $('.img-info-container').html('<p id="img-info">Image ' + index + ' of ' + galleryCount + '</p>');
+
+                $('.lightbox-container').show();
+
+                disableLightboxScroll();
+                
+            }else{
+                var lightbox = '<div id="lightbox" class="lightbox-container">' +
+                                '<p>Click to close</p>' +
+                                '<div id="content" class="lightbox-image-container">' + 
+                                '<img src="images/BirthdayCake1.jpg" alt="image">' +
+                                '</div>' +
+                                '</div>';
+
+                $('body').append(lightbox);
+            }
+        
+        });
     });
     
+    $('.imgContainer img').each(function(index){
+        //console.log(index + ': ' + $(this).attr('src'));
+        
+        $('.lightbox-container .lightbox-image-container').html('<p>Image ' + index + ' of ' + index.length + '</p>');
+    });
+    
+    $('#lightbox').on('click', function(){
+        $('#lightbox').hide();
+    });
      
     
 });

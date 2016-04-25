@@ -5,9 +5,9 @@
     height: 165px;
     display: inline-block;
     background-color: rgb(229,229,229);
-    padding: 5px;
+    padding: 4px;
     margin: 0 5px 15px 5px;
-    box-shadow: 0 8px 15px black;
+    box-shadow: 5px 5px 15px black;
 }
 
 img {
@@ -36,11 +36,43 @@ img {
 }
 
 /**EDIT THIS (a div needs to be added with this class that will be displayed when an image is selected)**/
-.lightbox-background{
+.lightbox-container{
+    display: none;
     width: 100%;
     height: 100%;
-    background-color: rgba(255,0,0,1);
+    background-color: rgba(0,0,0,0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
     z-index: 200;
+}
+
+.lightbox-container #close-info{
+    text-align: right;
+    color: white;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+
+.lightbox-container #img-info{
+    text-align: left;
+    color: white;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+.lightbox-image-container{
+    display: inline-block;
+    width: 90%;
+    height: auto;
+    margin-top: 20px;
+    border: 4px ridge white;
+    box-shadow: 3px 3px 5px white;
+}
+
+.lightbox-image-container img{
+   box-shadow: 0 0 25px #111;
 }
 /**EDIT THIS (a div needs to be added with this class that will be displayed when an image is selected)**/
 
