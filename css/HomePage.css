@@ -1,3 +1,6 @@
+
+
+
 .text-content{
     text-align: justify;
 }
@@ -8,12 +11,37 @@
     height: 250px;
 }
 
-
-@media (min-width: 769px){
-    
+@media (max-width: 320px){
     #cakeImage{
-        width: 300px;
-        height: 350px;
+    	width: 150px;
+    	height: 175px;
     }
+}
+
+@media (min-width: 700px){
+    
+    .content-container{
+		width: 80%;
+		margin: 20px auto 0;
+	}
+    
+}
+
+
+@media (min-width: 1000px){
+    
+    .content-container{
+		width: 70%;
+		margin: 20px auto 0;
+	}
+    
+}
+
+@media (min-width: 1400px){
+    
+    .content-container{
+		width: 60%;
+		margin: 20px auto 0;
+	}
     
 }

@@ -7,7 +7,6 @@
 html,
 body{
     height: 100%;
-    margin-bottom: -90px;
 }
 
 body{
@@ -172,6 +171,7 @@ footer{
     width: 100%;
     text-align: center;
     line-height: 90px;
+    bottom: 0;
 }
 
 
