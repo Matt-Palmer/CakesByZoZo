@@ -64,6 +64,7 @@ header{
     width: 100%;
 }
 
+
 .toggle-menu{
     display: block;
     float: right;
@@ -183,45 +184,94 @@ footer{
 }
 
 
-/*
-MEDIA QUERIES - on devices that have a greater width than 
-769px then the classes defined inside will be applied.
-*/
-@media (min-width: 769px){
+
+.content-container{
+    min-height: 820px;
+    margin: 20px auto 0;
+}
+
+.main-nav-menu{
+        display: none;
+}
+
+
     
-    .mainHeader{
-        text-align: left;
+
+@media (min-width: 700px){
+    
+    .content-container{
+        width: 80%;
     }
     
-    .navTabs > ul > li > a{
-       padding-left: 10px;
-    }
+}
+
+
+@media (min-width: 1000px){
     
-    .subMenu > li{
-        text-align: right;
-    }
-    
-    .subMenu > li > a{
-        padding-right: 10px;
+    .content-container{
+        width: 70%;
     }
 
-    .container{
-        max-width: 800px;
-        margin: 0 auto ;
-        padding: 0;
-        height: auto;
+    .main-nav-menu{
+        display: block;
+        text-align: center;
+    }
+
+    .main-nav-menu li{
+        display: inline-block;
+    }
+
+    .main-nav-menu li a:hover{
+        background-color: rgb(65, 167, 216);
+        color: white;
+    }
+
+    .main-nav-menu li ul{
+        display: none;
+    }
+
+    .main-nav-menu li:hover ul{
+        display: block;
+        position: absolute;
+    }
+
+    .main-nav-menu li ul li{
+        display: block;
+        background-color: rgb(233,233,233);
+        width: 200px;
+        height: 40px;
+    }
+
+    .main-nav-menu li ul li a{
+        display: block;
+        width: 200px;
+        height: 40px;
+        line-height: 35px;
+        color: rgb(65, 167, 216);
+    }
+
+    .main-nav-menu li ul li a:hover{
+        background-color: rgb(65, 167, 216);
+        color: white;
+    }
+
+    .main-nav-menu li a.selected,
+    .main-nav-menu li ul li a.selected{
+         background-color: rgb(65, 167, 216);
+        color: white;
+    }
+
+    .toggle-menu{
+        display: none;
     }
     
-    .body-container{
-        margin-top: 10px;
-        padding: 10px;
+}
+
+@media (min-width: 1400px){
+    
+    .content-container{
+        width: 60%;
     }
     
-    .wrapper{
-        min-height: calc(100vh - 90px);
-        padding: 0;
-        margin: 0;
-    }
-    
-    
+}    
 }

@@ -80,30 +80,32 @@ $(document).ready(function($){
     })
 
     
-    $('.submenu-container a').each(function highlightSelectedListItem(index) {
+    $('.submenu-container a, .main-nav-menu li a').each(function highlightSelectedListItem(index) {
         if(this.href.trim() == window.location){
             $(this).addClass("selected");
 
-            console.log("class added")
+            console.log("submenu added")
         }
             
     });
 
-    $('.gallery-submenu-container a').each(function highlightSelectedGalleryListItem(index) {
+    $('.gallery-submenu-container a, .main-nav-menu li ul li a').each(function highlightSelectedGalleryListItem(index) {
         if(this.href.trim() == window.location){
             $(this).addClass("selected");
             
             if(this.id == 'gallery-choices'){
                 $('#gallery').addClass('selected');
+                $('#main-gallery').addClass('selected');
             }
 
-            console.log("class added")
+            console.log("submenu 2 added")
         }
             
     });
-    
-    
-     
+
+
+
+ 
     
 });
 

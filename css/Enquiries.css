@@ -2,7 +2,7 @@
 
 .form-container{
     text-align: center;
-    margin: 20px;
+    margin: 20px auto 0;
     position: relative;
 }
 
@@ -83,11 +83,7 @@ h3{
     outline: 0;
 }
 
-@media (max-width: 340px){
-    .form-container{
-        margin: 20px 0 0;
-    }
-}
+
 
 /**Any screen that has a width greater than 378**/
 @media (min-width: 400px){
@@ -104,7 +100,7 @@ h3{
     
     /**this .main css may be taken out as the height may not need to be set if more images are inserted**/
     .form-container{
-        width: 60%;
+        width: 70%;
         margin: 20px auto 0;
     }
     
@@ -114,7 +110,7 @@ h3{
     
     /**this .main css may be taken out as the height may not need to be set if more images are inserted**/
     .form-container{
-        width: 50%;
+        width: 60%;
         margin: 20px auto 0;
     }
     
@@ -123,15 +119,8 @@ h3{
 @media (min-width: 1000px){
         
     .form-container{
-        width: 40%;
+        width: 50%;
     }
 
 }
 
-@media (min-width: 1500px){
-        
-    .form-container{
-        width: 30%;
-    }
-
-}

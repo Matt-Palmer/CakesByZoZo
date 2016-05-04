@@ -22,12 +22,6 @@ img {
     box-shadow: none;
 }
 
-.gallery-container{
-    width: 100%;
-    margin: 0 auto;
-    text-align: center;
-}
-
 .main{
     text-align: center;
     margin: 0 auto;
@@ -43,20 +37,3 @@ img {
     }
 }
 
-/**Any screen that has a width greater than 378**/
-@media (min-width: 378px){
-    
-    /**this .main css may be taken out as the height may not need to be set if more images are inserted**/
-    .main{
-        min-height: 100%;
-    }
-    
-}
-
-@media (min-width: 960px){
-        
-    .gallery-container{
-        width: 60%;
-    }
-
-}
