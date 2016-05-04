@@ -31,6 +31,10 @@ h1, a{
     font-weight: normal;
 }
 
+h3{
+    margin: 20px 10px;
+}
+
 .headerNav{
     background-color: rgb(233,233,233);
     height: 40px;
@@ -39,7 +43,7 @@ h1, a{
     margin-bottom: -40px;
  }
 
- div, p{
+ div, p, h3{
     font-family: 'Lora', serif;
  }
  
@@ -228,12 +232,10 @@ footer{
 
     .main-nav-menu li ul{
         display: none;
-    }
-
-    .main-nav-menu li:hover ul{
-        display: block;
         position: absolute;
     }
+
+    
 
     .main-nav-menu li ul li{
         display: block;

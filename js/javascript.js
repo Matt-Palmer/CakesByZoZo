@@ -53,6 +53,12 @@ $(document).ready(function($){
         }
     })
 
+    $('#main-gallery').click(function(event){
+        event.preventDefault();
+        $('.main-nav-menu li ul').toggle('slide', {direction: 'up'}, 1000);
+        console.log('slide');
+    })
+
     $('#toggleMenu').click(function toggleMenu(event){
         event.preventDefault();
         $('.submenu-container ul').toggle('slide', {direction: 'right'}, 10);
