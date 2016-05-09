@@ -7,9 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="utf-8">
         
-        <script src="js/jquery-2.2.0.min.js"></script>
-
-        <script src='js/jquery-ui.min.js'></script>
+        
 
 
         
@@ -23,7 +21,20 @@
     <body>
         
         <?php
-            $name = 
+            $subject = 'New Cake Request';
+            $name = $_POST['name'];
+            $email = $_POST['email'];
+            $request_date = $_POST['request-date'];
+            $cake_size = $_POST['cake-size'];
+            $cake_flavour = $_POST['cake-flavour'];
+            $user_message = $_POST['message'];
+        
+            $message = 'Name: ' . $name . "\r\n" . 'Email: ' . $email . "\r\n" . 'Requested Date: ' . $request_date . "\r\n" . 'Flavour: ' . $cake_flavour . "\r\n" . 'Size: ' . $cake_size . "\r\n" . 'Message: ' . $user_message;
+        
+            $to = 'matt_palmer_20@hotmail.co.uk';
+            /**$to = 'zoejackson311@hotmail.co.uk';**/
+            
+            mail($to, $subject, $message);
         ?>
         
         <header>
@@ -86,19 +97,19 @@
                 <div class="form-container">
                     <h3>Enquiries Form</h3>
                     
-                    <form method="post">
+                    <form name="enquiry-form" method="post" onsubmit="return validateForm()">
                         <p class="form-headings">Name:</p>
-                        <input type="text" id="Name" name="name" class="input-fields" placeholder="Enter your full name">
+                        <input type="text" id="required" name="name" class="input-fields" placeholder="Enter your full name">
 
                         <p class="form-headings">Email:</p>
-                        <input type="email" id="email" name="email" class="input-fields" placeholder="Enter your email">
+                        <input type="email" id="required" name="email" class="input-fields">
 
                         <p class="form-headings">Requested Date:</p>
-                        <input type="date" id="requested-date" name="request-date" class="input-fields">
+                        <input type="date" id="required" name="request-date" class="input-fields">
 
                         <p class="form-headings">Cake Size:</p>
-                        <select class="selection-field" name="cake-size">
-                            <option value="None">-</option>
+                        <select id="required" class="selection-field" name="cake-size">
+                            <option></option>
                             <option value="6">6</option>
                             <option value="8">8</option>
                             <option value="10">10</option>
@@ -106,8 +117,8 @@
                         </select>
 
                         <p class="form-headings">Cake Flavour:</p>
-                        <select class="selection-field" name="cake-flavour">
-                            <option value="None">-</option>
+                        <select id="required" class="selection-field" name="cake-flavour">
+                            <option></option>
                             <option value="Vanilla">Vanilla</option>
                             <option value="Chocolate">Chocolate</option>
                             <option value="Fruit">Fruit</option>
@@ -115,9 +126,9 @@
                         </select>
 
                         <p class="form-headings">Message:</p>
-                        <textarea id="user-message" name="message" class="text-area input-fields" placeholder="Enter your message"></textarea>
+                        <textarea id="required" name="message" class="text-area input-fields" placeholder="Enter your message"></textarea>
 
-                        <input class="btn" type="button" value="Submit">
+                        <input id="submit-btn" class="btn" type="submit" value="Submit">
                     </form>
                 </div>
             </div>
@@ -129,7 +140,9 @@
             <p style="padding: 0; margin:0;">&copy Copyright Matt Palmer</p>
         </footer>
         
-        
+        <script src="js/jquery-2.2.0.min.js"></script>
+
+        <script src='js/jquery-ui.min.js'></script>
         <script src="js/javascript.js"></script>
     
     </body>

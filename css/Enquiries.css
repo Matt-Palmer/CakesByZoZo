@@ -60,11 +60,13 @@ h3{
     -webkit-appearance: none;
 }
 
-
-
 .text-area{
     height: 150px;
     padding: 5px;
+}
+
+.requiredField{
+    box-shadow: 0 0 5px rgba(216, 65, 65, 1);
 }
 
 .btn{
