@@ -66,7 +66,7 @@ h3{
 }
 
 .requiredField{
-    box-shadow: 0 0 5px rgba(216, 65, 65, 1);
+    border: 2px solid red;
 }
 
 .btn{

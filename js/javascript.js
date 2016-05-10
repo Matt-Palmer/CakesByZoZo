@@ -48,10 +48,9 @@ function validateForm(){
     
     for(var i = 0; i < requiredField.length; i++){
         if(requiredField[i].value == "" || requiredField[i].value == null){
+            
             console.log(requiredField[i].value + " is empty");
-            
-            
-            
+                       
             if(requiredField[i].classList.contains('requiredField')){
                 console.log('requiredField has already been added');
             }else{
@@ -62,7 +61,7 @@ function validateForm(){
         else{
             
             if(requiredField[i].classList.contains('requiredField')){
-                requiredField[i].className.replace( /(?:^|\s)requiredField(?!\S)/g , '' );
+                requiredField[i].className = requiredField[i].className.replace( /(?:^|\s)requiredField(?!\S)/g , '' );
                 console.log('requiredField is still there');
             }else{
                 console.log('requiredField has been removed');
