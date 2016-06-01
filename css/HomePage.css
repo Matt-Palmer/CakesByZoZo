@@ -1,8 +1,60 @@
 
+/*.photobanner{
+	height: 300px;
+	width: 100%;
+	overflow: hidden;
+	margin-bottom: 80px;
+	border: 10px solid lightgray;
+	padding-top: 5px;
+	box-shadow: 0 5px 5px gray;
+}
 
+.photobanner img{
+	width: 300px;
+	height: 270px;
+}
+
+.first{
+	animation: bannermove 10s linear infinite;
+}
+
+@-webkit-keyframes "bannermove"{
+	0%{
+		margin-left: 0px;
+	}
+	100%{
+		margin-left: -910px;
+	}
+}*/
+
+.carousel{
+	margin: 0 auto;
+	width: 100%;
+	overflow: hidden;
+	border: 5px solid lightgray;
+	box-shadow: 0 5px 5px gray;
+	margin-bottom: 50px;
+}
+
+.carousel ul{
+	width: 3500px;
+}
+
+.carousel ul li{
+	width: 1140px;
+	text-align: center;
+	height: 320px;
+	list-style: none;
+	float: left;
+}
+
+.carousel ul li img{
+	width: 100%;
+}
 
 .text-content{
     text-align: justify;
+    padding: 10px;
 }
 
 #cakeImage{
