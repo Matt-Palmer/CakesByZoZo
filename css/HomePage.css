@@ -55,6 +55,15 @@
 .text-content{
     text-align: justify;
     padding: 10px;
+    font-size: 20px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+#content-header{
+	font-size: 30px;
+	width: 90%;
+	font-family: 'Pacifico', cursive;
 }
 
 #cakeImage{
@@ -68,5 +77,21 @@
     	width: 150px;
     	height: 175px;
     }
+
+}
+
+@media (min-width: 1000px){
+    
+    .text-content{
+	    margin: 0;
+	    width: 50%
+	}
+
+	#content-header{
+		width: 60%;
+		font-size: 50px;
+		font-family: 'Pacifico', cursive;
+	}
+    
 }
 

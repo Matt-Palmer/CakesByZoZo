@@ -18,7 +18,7 @@
     console.log(hid);
 }*/
 
-document.getElementById('menu').addEventListener('click', function(e){
+/*document.getElementById('menu').addEventListener('click', function(e){
     e.preventDefault();
     var menu = document.getElementById('menu');
     var submenu = document.getElementById('submenu');
@@ -26,7 +26,7 @@ document.getElementById('menu').addEventListener('click', function(e){
     submenu.style.display = (hid) ? 'inline-block' : 'none';
     menu.style.backgroundColor = (hid) ? 'rgb(65, 167, 216)' : 'rgb(233,233,233)';
     menu.style.color = (hid) ? 'white' : 'rgb(65, 167, 216)';
-})
+})*/
 
 var fixedMenu = document.getElementById('fixed-menu');
 
@@ -34,11 +34,11 @@ fixedMenu.addEventListener('touchmove', function(e){
     e.preventDefault();
 }, false);
 
-var fixedGalleryMenu = document.getElementById('fixed-gallery-menu');
+/*var fixedGalleryMenu = document.getElementById('fixed-gallery-menu');
 
 fixedGalleryMenu.addEventListener('touchmove', function(e){
     e.preventDefault();
-}, false);
+}, false);*/
 
 
 
@@ -62,10 +62,10 @@ $(document).ready(function($){
     })
 
     
-    $('#main-gallery').click(function(event){
+   /*$('#main-gallery').click(function(event){
         event.preventDefault();
         $('.main-nav-menu li ul').toggle('slide', {direction: 'up'}, 1000);
-    })
+    })*/
    
     $('#toggleMenu').click(function toggleMenu(event){
         event.preventDefault();
@@ -78,20 +78,20 @@ $(document).ready(function($){
         $('.submenu-container ul').toggle('slide', {direction: 'right'}, 1000);
     })
     
-     $('#gallery').click(function openGalleryMenu(event){
+    /*$('#gallery').click(function openGalleryMenu(event){
         event.preventDefault();
         $('.submenu-container ul').toggle('slide', {direction: 'right'}, 1000);
          
         $('.gallery-submenu-container ul').toggle('slide', {direction: 'right'}, 1000);
         console.log('slide');
-    })
+    })*/
 
-    $('#Back-submenu').click(function closeGalleryMenu(event){
+   /* $('#Back-submenu').click(function closeGalleryMenu(event){
         event.preventDefault();
         $('.gallery-submenu-container ul').toggle('slide', {direction: 'right'}, 1000);
         
         $('.submenu-container ul').toggle('slide', {direction: 'right'}, 1000);
-    })
+    })*/
 
     
     $('.submenu-container a, .main-nav-menu li a').each(function highlightSelectedListItem(index) {
