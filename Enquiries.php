@@ -112,8 +112,9 @@
         </header>
 
         <nav class="headerNav">
+            
             <a href="#" id="toggleMenu" class="toggle-menu">Menu</a>     
-            <ul class="main-menu">
+            <!--<ul class="main-menu">
                 <li> 
                     <a href="#" id="menu">Menu</a> 
                     <ul id="submenu" class="subMenu">
@@ -123,34 +124,35 @@
                         <li><a href="About.html">About</a></li>
                     </ul>
                 </li>
-            </ul>
+            </ul>-->
 
             <ul class="main-nav-menu">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="#" id="main-gallery" style="padding-left: 40px;">Gallery<span style="margin-left: 30px;">&#9660</span></a>
-                    <ul>
+                <li><a href="gallery.html" >Gallery</a>
+                    <!--<ul>
                         <li><a href="Weddings.html" id="gallery-choices">Weddings</a></li>
                         <li><a href="Birthdays.html" id="gallery-choices">Birthdays</a></li>
                         <li><a href="Celebrations.html" id="gallery-choices">Celebrations</a></li>
                         <li><a href="Cupcakes.html" id="gallery-choices">Cupcakes</a></li>
-                    </ul>
+                    </ul>-->
                 </li>
                 <li><a href="Enquiries.php">Enquiries</a></li>
                 <li><a href="About.html">About</a></li>
             </ul>
+            
         </nav>
 
         <div id='fixed-menu' class="submenu-container">
             <ul>
                 <li><a href='#' id='Back'>Back</a></li>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="#" id="gallery">Gallery</a></li>
+                <li><a href="gallery.html" id="gallery">Gallery</a></li>
                 <li><a href="Enquiries.php">Enquiries</a></li>
                 <li><a href="About.html">About</a></li>
             </ul>
         </div>
             
-        <div id='fixed-gallery-menu' class="gallery-submenu-container">
+        <!--<div id='fixed-gallery-menu' class="gallery-submenu-container">
             <ul>
                 <li><a href='#' id='Back-submenu'>Back</a></li>
                 <li><a href="Weddings.html" id="gallery-choices">Weddings</a></li>
@@ -158,7 +160,7 @@
                 <li><a href="Celebrations.html" id="gallery-choices">Celebrations</a></li>
                 <li><a href="Cupcakes.html" id="gallery-choices">Cupcakes</a></li>
             </ul>
-        </div> 
+        </div>--> 
             
            
 
@@ -285,23 +287,53 @@
             
         
         <footer>
-            <div class="social-links">
-                <ul>
-                    <li>
-                        <a href="https://www.facebook.com/CakesByZoZo/?fref=ts" target="_blank"><img src="images/facebook-img.png">Facebook</a>
-                    </li>
-                    <li>
-                        <a href="https://twitter.com/CakesByZozo" target="_blank"><img src="images/twitter-img.png">Twitter</a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/cakesbyzozo/?hl=en" target="_blank"><img src="images/instagram-img.png">Instagram</a>
-                    </li>
-                    <li>
-                        <a href="https://uk.pinterest.com/zoejackson311/?etslf=4138&eq=zoe" target="_blank"><img src="images/pinterest-img.png">Pinterest</a>
-                    </li>
-                </ul>
-            </div>     
-            <p class="copyright">&copy Copyright Matt Palmer</p>
+            <div class="footer-content-container">
+            
+            <div class="footer-link-container">
+
+                <div class="social-links">
+                        <ul>
+                            <li>
+                                <a href="https://www.facebook.com/CakesByZoZo/?fref=ts" target="_blank"><img src="images/facebook-img.png">Facebook</a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/CakesByZozo" target="_blank"><img src="images/twitter-img.png">Twitter</a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/cakesbyzozo/?hl=en" target="_blank"><img src="images/instagram-img.png">Instagram</a>
+                            </li>
+                            <li>
+                                <a href="https://uk.pinterest.com/zoejackson311/?etslf=4138&eq=zoe" target="_blank"><img src="images/pinterest-img.png">Pinterest</a>
+                            </li>
+                        </ul>
+                    </div> 
+                    <div class="footer-nav">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Gallery</a></li>
+                            <li><a href="#">Enquiries</a></li>
+                            <li><a href="#">About</a></li>
+                        </ul>
+                    </div> 
+
+             </div>
+                
+                
+
+
+                
+
+
+
+
+
+
+                
+
+
+                <p class="copyright">&copy Copyright Matt Palmer</p>
+
+            </div>
         </footer>
         
         <script src="js/jquery-2.2.0.min.js"></script>
