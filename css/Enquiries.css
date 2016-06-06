@@ -47,7 +47,7 @@
 
 .form-container{
     text-align: center;
-    margin: 20px auto 0;
+    margin: 0 auto;
     position: relative;
 }
 
@@ -59,7 +59,6 @@
 
 form{
     margin-top: 20px;
-    margin-bottom: 50px;
 }
 
 .required-heading,
@@ -176,7 +175,6 @@ form{
     
     .form-container{
         width: 80%;
-        margin: 20px auto 0;
     }
     
 }
@@ -185,7 +183,6 @@ form{
     
     .form-container{
         width: 70%;
-        margin: 20px auto 0;
     }
     
 }
@@ -194,7 +191,6 @@ form{
     
     .form-container{
         width: 60%;
-        margin: 20px auto 0;
     }
     
 }

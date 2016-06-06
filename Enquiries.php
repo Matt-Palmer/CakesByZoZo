@@ -123,6 +123,8 @@
 
                 <p id="form-message">Please use the form below to give me an idea of what cake you’d like.</p>
                     
+                <hr>
+
                 <div class="form-container">
 
                     <?php echo $result; ?>
@@ -236,7 +238,11 @@
 
                         <input id="submit-btn" class="btn" type="submit" name="submit" value="Submit">
                     </form>
+
+
                 </div>
+
+                 <hr>
             </div>
         </div>
             
