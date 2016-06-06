@@ -1,58 +1,27 @@
+/*  CONTENTS
 
-/**iPhone**/
-.imgContainer{
-    width: 145px;
-    height: 145px;
-    display: inline-block;
-    background-color: rgb(229,229,229);
-    padding: 4px;
-    margin: 0 5px 15px 5px;
-    box-shadow: 5px 5px 15px black;
-}
+    (1) GALLERY CONTENT
+    (2) MEDIA QUERIES
 
-.imgSelectionContainer{
-    width: 300px;
-    height: 300px;
-    margin: 0 auto 50px;
-    border: 5px solid lightgray;
-    box-shadow: 0 5px 5px gray;
-}
+*/
 
-.img{
-    width: 100%;
-    height: 100%;
-    display: block;
-}
 
-#content-header{
-    text-align: center;
-    font-size: 30px;
-    width: 100%;
-    margin-bottom: 20px;
-    font-family: 'Pacifico', cursive;
-}
 
+/*(1)*/
+/*----------------------------------*/
+/*---------GALLERY CONTENT----------*/
+/*----------------------------------*/
 .text-content{
     text-align: justify;
     font-size: 20px;
-    width: 100%;
+    width: 80%;
     margin: 0 auto 50px;
-}
-
-.imgSelectionContainer:hover{
-    box-shadow: none;
-}
-
-.main{
-    text-align: center;
-    margin: 0 auto;
-    padding: 55px 10px 10px;
 }
 
 .row{
     width: 90%;
     height: auto;
-    margin: 0 auto 50px;
+    margin: 0 auto 30px;
 }
 
 .row:after{
@@ -65,8 +34,33 @@
     width: 100%
 }
 
-/**iPhone**/
+.imgSelectionContainer{
+    width: 300px;
+    height: 300px;
+    margin: 0 auto 50px;
+    border: 5px solid lightgray;
+    box-shadow: 0 5px 5px gray;
+}
 
+.imgSelectionContainer:hover{
+    box-shadow: none;
+}
+
+.img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+/*----------------------------------*/
+/*---------GALLERY CONTENT----------*/
+/*----------------------------------*/
+
+
+
+/*(2)*/
+/*----------------------------------*/
+/*-----------MEDIA QUERIES----------*/
+/*----------------------------------*/
 @media (max-width: 340px){
     .imgContainer{
         width: 120px;
@@ -75,6 +69,10 @@
 }
 
 @media (min-width: 700px){
+    .row{
+        width: 80%;
+    }
+
     .align-selection-box{
         width: 50%;
         float: left;
@@ -87,13 +85,13 @@
         border: 5px solid lightgray;
         box-shadow: 0 5px 5px gray;
     }
-
-    .row{
-        width: 80%;
-    }
 }
 
 @media (min-width: 1000px){
+    .row{
+        width: 80%;
+    }
+
     .align-selection-box{
         width: 50%;
         float: left;
@@ -106,15 +104,12 @@
         border: 5px solid lightgray;
         box-shadow: 0 5px 5px gray;
     }
-
-    .row{
-        width: 80%;
-    }
+   
 }
 
 @media (min-width: 1200px){
     .row{
-        width: 60%;
+        width: 70%;
     }
 
     .text-content{
@@ -122,4 +117,7 @@
         width: 80%;
     }
 }
+/*----------------------------------*/
+/*-----------MEDIA QUERIES----------*/
+/*----------------------------------*/
 

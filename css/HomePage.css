@@ -1,32 +1,17 @@
+/*	CONTENTS
 
-/*.photobanner{
-	height: 300px;
-	width: 100%;
-	overflow: hidden;
-	margin-bottom: 80px;
-	border: 10px solid lightgray;
-	padding-top: 5px;
-	box-shadow: 0 5px 5px gray;
-}
+	(1) CAROUSEL
+	(2) HOME PAGE CONTENT
+	(3) MEDIA QUERIES
 
-.photobanner img{
-	width: 300px;
-	height: 270px;
-}
+*/
 
-.first{
-	animation: bannermove 10s linear infinite;
-}
 
-@-webkit-keyframes "bannermove"{
-	0%{
-		margin-left: 0px;
-	}
-	100%{
-		margin-left: -910px;
-	}
-}*/
 
+/*(1)*/
+/*----------------------------------*/
+/*-------------CAROUSEL-------------*/
+/*----------------------------------*/
 .carousel{
 	margin: 0 auto;
 	width: 100%;
@@ -50,26 +35,25 @@
 .carousel ul li img{
 	width: 100%;
 }
+/*----------------------------------*/
+/*-------------CAROUSEL-------------*/
+/*----------------------------------*/
 
-.text-content{
-    text-align: justify;
-    font-size: 20px;
-    width: 100%;
-    margin: 0 auto;
+
+
+/*(2)*/
+/*----------------------------------*/
+/*---------HOME PAGE CONTENT--------*/
+/*----------------------------------*/
+.section{
+	width: 90%;
+	margin: 0 auto;
 }
 
-#content-header{
-	text-align: center;
-	font-size: 30px;
-	width: 100%;
-	margin-bottom: 20px;
-	font-family: 'Pacifico', cursive;
-}
-
-#profile-img{
-	width: 200px;
-	height: 200px;
-	border: 5px solid lightgray;
+.section:after{
+	content: "";
+	display: block;
+	clear: both;
 }
 
 .content-holder{
@@ -82,18 +66,30 @@
 	margin-bottom: 20px;
 }
 
-.section{
-	width: 90%;
-	margin: 0 auto;
+#profile-img{
+	width: 200px;
+	height: 200px;
+	border: 5px solid lightgray;
 }
 
-.section:after{
-	content: "";
-	display: block;
-	clear: both;
+.text-content{
+    text-align: justify;
+    font-size: 20px;
+    width: 100%;
+    margin: 0 auto;
 }
+/*----------------------------------*/
+/*---------HOME PAGE CONTENT--------*/
+/*----------------------------------*/
 
+
+
+/*(3)*/
+/*----------------------------------*/
+/*-----------MEDIA QUERIES----------*/
+/*----------------------------------*/
 @media (max-width: 320px){
+    
     #cakeImage{
     	width: 150px;
     	height: 175px;
@@ -102,22 +98,17 @@
 }
 
 @media (min-width: 1000px){
-    
-    .text-content{
-	    margin: 0;
-	    width: 100%
-	}
-
-	#content-header{
-		width: 100%;
-		font-size: 50px;
-		font-family: 'Pacifico', cursive;
-	}
-
-	.content-holder{
+    .content-holder{
 		width: 50%;
 		float: left;
 	}
+
+	 .text-content{
+	    margin: 0;
+	    width: 100%
+	}
     
 }
-
+/*----------------------------------*/
+/*-----------MEDIA QUERIES----------*/
+/*----------------------------------*/

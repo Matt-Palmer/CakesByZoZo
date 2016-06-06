@@ -85,25 +85,7 @@
                 }
 
 
-            }  
-                
-            
-            
-              /** $subject = 'New Cake Request';
-                $name = $_POST['name'];
-                $email = $_POST['email'];
-                $request_date = $_POST['request-date'];
-                $cake_size = $_POST['cake-size'];
-                $cake_flavour = $_POST['cake-flavour'];
-                $user_message = $_POST['message'];
-
-                $message = 'Name: ' . $name . "\r\n" . 'Email: ' . $email . "\r\n" . 'Requested Date: ' . $request_date . "\r\n" . 'Flavour: ' . $cake_flavour . "\r\n" . 'Size: ' . $cake_size . "\r\n" . 'Message: ' . $user_message;
-
-                $to = 'matt_palmer_20@hotmail.co.uk';
-                $to = 'zoejackson311@hotmail.co.uk';
-
-                mail($to, $subject, $message); **/
-            
+            }              
             
         ?>
         
@@ -113,62 +95,36 @@
 
         <nav class="headerNav">
             
-            <a href="#" id="toggleMenu" class="toggle-menu">Menu</a>     
-            <!--<ul class="main-menu">
-                <li> 
-                    <a href="#" id="menu">Menu</a> 
-                    <ul id="submenu" class="subMenu">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="Gallery.html">Gallery</a></li>
-                        <li><a href="Enquiries.php">Enquiries</a></li>
-                        <li><a href="About.html">About</a></li>
-                    </ul>
-                </li>
-            </ul>-->
+            <a href="#" id="toggleMenu" class="toggle-menu">Menu</a>
 
-            <ul class="main-nav-menu">
+            <ul class="desktop-nav-menu">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="gallery.html" >Gallery</a>
-                    <!--<ul>
-                        <li><a href="Weddings.html" id="gallery-choices">Weddings</a></li>
-                        <li><a href="Birthdays.html" id="gallery-choices">Birthdays</a></li>
-                        <li><a href="Celebrations.html" id="gallery-choices">Celebrations</a></li>
-                        <li><a href="Cupcakes.html" id="gallery-choices">Cupcakes</a></li>
-                    </ul>-->
-                </li>
+                <li><a href="gallery.html" >Gallery</a></li>
                 <li><a href="Enquiries.php">Enquiries</a></li>
                 <li><a href="About.html">About</a></li>
             </ul>
             
         </nav>
 
-        <div id='fixed-menu' class="submenu-container">
+        <div id='fixed-menu' class="slide-in-menu">
             <ul>
-                <li><a href='#' id='Back'>Back</a></li>
+                <li><a href='#' id='back-btn'>Back</a></li>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="gallery.html" id="gallery">Gallery</a></li>
                 <li><a href="Enquiries.php">Enquiries</a></li>
                 <li><a href="About.html">About</a></li>
             </ul>
-        </div>
-            
-        <!--<div id='fixed-gallery-menu' class="gallery-submenu-container">
-            <ul>
-                <li><a href='#' id='Back-submenu'>Back</a></li>
-                <li><a href="Weddings.html" id="gallery-choices">Weddings</a></li>
-                <li><a href="Birthdays.html" id="gallery-choices">Birthdays</a></li>
-                <li><a href="Celebrations.html" id="gallery-choices">Celebrations</a></li>
-                <li><a href="Cupcakes.html" id="gallery-choices">Cupcakes</a></li>
-            </ul>
-        </div>--> 
-            
-           
+        </div>          
 
         <div class="main">
             <div class="content-container">
-                <div class="form-container">
-                    <h3>Enquiries Form</h3>
+                
+                <p id="content-header">Get in touch</p>
+
+                <p id="form-message">Please use the form below to give me an idea of what cake you’d like.</p>
                     
+                <div class="form-container">
+
                     <?php echo $result; ?>
                     
                     <p class="required-heading">*Required</p>
@@ -289,9 +245,9 @@
         <footer>
             <div class="footer-content-container">
             
-            <div class="footer-link-container">
+                <div class="footer-link-container">
 
-                <div class="social-links">
+                    <div class="social-links">
                         <ul>
                             <li>
                                 <a href="https://www.facebook.com/CakesByZoZo/?fref=ts" target="_blank"><img src="images/facebook-img.png">Facebook</a>
@@ -316,20 +272,7 @@
                         </ul>
                     </div> 
 
-             </div>
-                
-                
-
-
-                
-
-
-
-
-
-
-                
-
+                </div>
 
                 <p class="copyright">&copy Copyright Matt Palmer</p>
 

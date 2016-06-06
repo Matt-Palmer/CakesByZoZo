@@ -1,7 +1,26 @@
+/*  CONTENTS
+
+    (1) HTML DOCUMENT SET UP
+    (2) HEADER
+    (3) HEADER NAVIGATION
+    (4) MAIN CONTENT
+    (5) FOOTER
+    (6) FOOTER NAVIGATION
+    (7) MEDIA QUERIES
+
+*/
+
+
+
+/*(1)*/
+/*----------------------------------*/
+/*-------HTML DOCUMENT SET UP-------*/
+/*----------------------------------*/
 *{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: 'Lora', serif;
 }
 
 html,
@@ -13,21 +32,11 @@ body{
     padding-top: 150px;
 }
 
-header{
-    background-color: rgba(65, 167, 216, 1);
-    color: white;
-    height: 200px;
-    text-align: center;
-    z-index: -1;
-}
-
 h1{
     line-height: 150px;
 }
 
-h1, a{
-    /*font-family: 'Pacifico', cursive;*/
-    /*font-family: 'Lobster', cursive;*/
+h1, a, #content-header{
     font-family: 'Pacifico', cursive;
     font-weight: normal;
 }
@@ -36,6 +45,38 @@ h3{
     margin: 20px 10px;
 }
 
+hr{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: lightgray;
+}
+/*----------------------------------*/
+/*-------HTML DOCUMENT SET UP-------*/
+/*----------------------------------*/
+
+
+
+/*(2)*/
+/*----------------------------------*/
+/*--------------HEADER--------------*/
+/*----------------------------------*/
+header{
+    background-color: rgba(65, 167, 216, 1);
+    color: white;
+    height: 200px;
+    text-align: center;
+    z-index: -1;
+}
+/*----------------------------------*/
+/*--------------HEADER--------------*/
+/*----------------------------------*/
+
+
+
+/*(3)*/
+/*----------------------------------*/
+/*--------HEADER NAVIGATION---------*/
+/*----------------------------------*/
 .headerNav{
     background-color: rgb(233,233,233);
     height: 40px;
@@ -43,10 +84,6 @@ h3{
     z-index: 150;
     margin-bottom: -40px;
     box-shadow: 0 5px 5px gray;
- }
-
- div, p, h3{
-    font-family: 'Lora', serif;
  }
  
 .headerNav > ul > li{
@@ -70,7 +107,6 @@ header{
     width: 100%;
 }
 
-
 .toggle-menu{
     display: block;
     float: right;
@@ -87,21 +123,18 @@ header{
     color: white;
 }
 
-#Back,
-#Back-submenu{
+#back-btn{
     width: 100px;
     text-align: center;
 }
 
-.gallery-submenu-container ul,
-.submenu-container ul{
+.slide-in-menu ul{
     display: none;
 }
 
-.gallery-submenu-container ul,
-.submenu-container ul{
+.slide-in-menu ul{
     height: 100%;
-    width: 80%;
+    width: 320px;
     position: fixed;
     background-color: rgb(233,233,233);
     top: 0px;
@@ -109,15 +142,13 @@ header{
     z-index: 160;
 }
 
-.gallery-submenu-container ul li,
-.submenu-container ul li{
+.slide-in-menu ul li{
     clear: both;
     list-style-type: none;
     text-align: right;
 }
 
-.gallery-submenu-container ul li a,
-.submenu-container ul li a{
+.slide-in-menu ul li a{
     display: block;
     padding: 20px;
     text-decoration: none;
@@ -125,53 +156,58 @@ header{
     background-color: rgba(188, 187, 187, 0.2);
 }
 
-.gallery-submenu-container ul li a:active,
-.gallery-submenu-container ul li a:focus,
-.submenu-container ul li a:active,
-.submenu-container ul li a:focus{
+.slide-in-menu ul li a:active,
+.slide-in-menu ul li a:focus{
     background-color: rgb(65, 167, 216);
     color: white;
 }
 
-
-.gallery-submenu-container ul li a.selected,
-.submenu-container ul li a.selected{
+.slide-in-menu ul li a.selected{
     background-color: rgba(65, 167, 216, 1);  
     color: white;
 }
 
-.main-menu{
-    display: none;
+.desktop-nav-menu{
+        display: none;
+}
+/*----------------------------------*/
+/*--------HEADER NAVIGATION---------*/
+/*----------------------------------*/
+
+
+
+/*(4)*/
+/*----------------------------------*/
+/*----------MAIN CONTENT------------*/
+/*----------------------------------*/
+.main{
+    position: relative;
+    background-color: white;
+    height: auto;
+    padding: 40px 10px 0;
 }
 
-/*DOUBLE CHECK IF THIS IS NEEDED*/
-.subMenu{
-    display: none;
-    background-color: rgb(233,233,233);
-    width: 200px;
-    margin: 0 auto;
+.content-container{
+    min-height: 820px;
+    margin: 50px auto 0;
 }
 
-.subMenu > li{
-    list-style-type: none;
+#content-header{
     text-align: center;
+    font-size: 40px;
+    width: 100%;
+    margin-bottom: 20px;
 }
+/*----------------------------------*/
+/*----------MAIN CONTENT------------*/
+/*----------------------------------*/
 
-.subMenu > li > a{
-    display: block;
-    color: rgb(65, 167, 216);
-    text-decoration: none;
-    height: 40px;
-    width: 200px;
-    line-height: 40px;
-}
 
-.subMenu > li > a:hover{
-    background-color: rgb(65, 167, 216);
-    color: white;
-}
-/*DOUBLE CHECK IF THIS IS NEEDED*/
 
+/*(5)*/
+/*----------------------------------*/
+/*--------------FOOTER--------------*/
+/*----------------------------------*/
 footer{
     position: relative;
     background-color: rgb(233,233,233);
@@ -184,6 +220,26 @@ footer{
 .copyright{
     padding: 30px 0;
     clear: both;
+}
+/*----------------------------------*/
+/*--------------FOOTER--------------*/
+/*----------------------------------*/
+
+
+
+/*(6)*/
+/*----------------------------------*/
+/*---------FOOTER NAVIGATION--------*/
+/*----------------------------------*/
+.footer-content-container{
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.footer-link-container{
+    width: 80%;
+    height: 180px;
+    margin: 0 auto;
 }
 
 .footer-nav ul,
@@ -222,45 +278,21 @@ footer{
     float: left;
     margin-right: 10px;
 }
-
-
-.main{
-    position: relative;
-    background-color: white;
-    height: auto;
-    padding: 40px 10px 0;
-}
-
-
-.content-container{
-    min-height: 820px;
-    margin: 50px auto 0;
-}
-
-.main-nav-menu{
-        display: none;
-}
-
-.footer-link-container{
-    width: 80%;
-    height: 180px;
-    margin: 0 auto;
-}
-
-.footer-content-container{
-    margin: 0 auto;
-    padding: 20px;
-}
-
-hr{
-    margin-top: 50px;
-    margin-bottom: 50px;
-    background-color: lightgray;
-}
+/*----------------------------------*/
+/*---------FOOTER NAVIGATION--------*/
+/*----------------------------------*/
   
 
+
+/*(7)*/
+/*----------------------------------*/
+/*-----------MEDIA QUERIES----------*/
+/*----------------------------------*/
 @media (min-width: 700px){
-    
+    .slide-in-menu ul{
+        width: 370px;
+    }
+
     .footer-content-container,
     .content-container{
         width: 80%;
@@ -281,55 +313,31 @@ hr{
 
 
 @media (min-width: 1000px){
-    
+    #content-header{
+        width: 100%;
+        font-size: 50px;
+    }
+
     .footer-content-container,
     .content-container{
         width: 70%;
     }
 
-    .main-nav-menu{
+    .desktop-nav-menu{
         display: block;
         text-align: center;
     }
 
-    .main-nav-menu li{
+    .desktop-nav-menu li{
         display: inline-block;
     }
 
-    .main-nav-menu li a:hover{
+    .desktop-nav-menu li a:hover{
         background-color: rgb(65, 167, 216);
         color: white;
     }
 
-    .main-nav-menu li ul{
-        display: none;
-        position: absolute;
-    }
-
-    
-
-    .main-nav-menu li ul li{
-        display: block;
-        background-color: rgb(233,233,233);
-        width: 200px;
-        height: 40px;
-    }
-
-    .main-nav-menu li ul li a{
-        display: block;
-        width: 200px;
-        height: 40px;
-        line-height: 35px;
-        color: rgb(65, 167, 216);
-    }
-
-    .main-nav-menu li ul li a:hover{
-        background-color: rgb(65, 167, 216);
-        color: white;
-    }
-
-    .main-nav-menu li a.selected,
-    .main-nav-menu li ul li a.selected{
+    .desktop-nav-menu li a.selected{
         background-color: rgb(65, 167, 216);
         color: white;
     }
@@ -348,4 +356,6 @@ hr{
     }
     
 }    
-}
+/*----------------------------------*/
+/*-----------MEDIA QUERIES----------*/
+/*----------------------------------*/

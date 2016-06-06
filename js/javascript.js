@@ -61,37 +61,17 @@ $(document).ready(function($){
         }
     })
 
-    
-   /*$('#main-gallery').click(function(event){
-        event.preventDefault();
-        $('.main-nav-menu li ul').toggle('slide', {direction: 'up'}, 1000);
-    })*/
    
     $('#toggleMenu').click(function toggleMenu(event){
         event.preventDefault();
-        $('.submenu-container ul').toggle('slide', {direction: 'right'}, 1000);
+        $('.slide-in-menu ul').toggle('slide', {direction: 'right'}, 1000);
         console.log('slide');
     })
 
-    $('#Back').click(function closeMenu(event){
+    $('#back-btn').click(function closeMenu(event){
         event.preventDefault();
-        $('.submenu-container ul').toggle('slide', {direction: 'right'}, 1000);
+        $('.slide-in-menu ul').toggle('slide', {direction: 'right'}, 1000);
     })
-    
-    /*$('#gallery').click(function openGalleryMenu(event){
-        event.preventDefault();
-        $('.submenu-container ul').toggle('slide', {direction: 'right'}, 1000);
-         
-        $('.gallery-submenu-container ul').toggle('slide', {direction: 'right'}, 1000);
-        console.log('slide');
-    })*/
-
-   /* $('#Back-submenu').click(function closeGalleryMenu(event){
-        event.preventDefault();
-        $('.gallery-submenu-container ul').toggle('slide', {direction: 'right'}, 1000);
-        
-        $('.submenu-container ul').toggle('slide', {direction: 'right'}, 1000);
-    })*/
 
     
     $('.submenu-container a, .main-nav-menu li a').each(function highlightSelectedListItem(index) {
