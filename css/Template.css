@@ -168,7 +168,7 @@ header{
 }
 
 .desktop-nav-menu{
-        display: none;
+    display: none;
 }
 /*----------------------------------*/
 /*--------HEADER NAVIGATION---------*/
@@ -181,10 +181,16 @@ header{
 /*----------MAIN CONTENT------------*/
 /*----------------------------------*/
 .main{
-    position: relative;
+    min-height: 100%;
     background-color: white;
-    height: auto;
     padding: 40px 10px 0;
+    margin-bottom: -300px;
+}
+
+.main:after{
+    content: "";
+    display: block;
+    height: 300px;
 }
 
 .content-container{

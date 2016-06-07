@@ -121,7 +121,7 @@
                 
                 <p id="content-header">Get in touch</p>
 
-                <p id="form-message">Please use the form below to give me an idea of what cake you’d like.</p>
+                <p class="text-content">Please use the form below to give me an idea of what cake you’d like.</p>
                     
                 <hr>
 

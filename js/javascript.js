@@ -74,25 +74,11 @@ $(document).ready(function($){
     })
 
     
-    $('.submenu-container a, .main-nav-menu li a').each(function highlightSelectedListItem(index) {
+    $('.slide-in-menu a, .desktop-nav-menu li a').each(function highlightSelectedListItem(index) {
         if(this.href.trim() == window.location){
             $(this).addClass("selected");
 
             console.log("submenu added")
-        }
-            
-    });
-
-    $('.gallery-submenu-container a, .main-nav-menu li ul li a').each(function highlightSelectedGalleryListItem(index) {
-        if(this.href.trim() == window.location){
-            $(this).addClass("selected");
-            
-            if(this.id == 'gallery-choices'){
-                $('#gallery').addClass('selected');
-                $('#main-gallery').addClass('selected');
-            }
-
-            console.log("submenu 2 added")
         }
             
     });

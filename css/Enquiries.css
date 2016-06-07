@@ -39,10 +39,11 @@
 /*----------------------------------*/
 /*------------FORM CONTENT----------*/
 /*----------------------------------*/
-#form-message{
-    margin: 0 auto;
+.text-content{
     text-align: justify;
-    width: 60%;
+    font-size: 20px;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .form-container{
@@ -180,6 +181,10 @@ form{
 }
 
 @media (min-width: 600px){
+
+    .text-content{
+        width: 70%;
+    }
     
     .form-container{
         width: 70%;
@@ -189,6 +194,10 @@ form{
 
 @media (min-width: 800px){
     
+    .text-content{
+        width: 60%;
+    }
+
     .form-container{
         width: 60%;
     }
@@ -196,6 +205,10 @@ form{
 }
 
 @media (min-width: 1000px){
+
+    .text-content{
+        width: 50%;
+    }
         
     .form-container{
         width: 50%;
